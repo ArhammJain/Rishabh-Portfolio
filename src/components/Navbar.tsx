@@ -1,14 +1,14 @@
 "use client"
 
-import { Home, Image as ImageIcon, User, Camera } from 'lucide-react'
+import { Home, UserRound, Contact, Images} from 'lucide-react'
 import { NavBar } from "@/components/ui/tubelight-navbar"
 
 export default function GlobalNavbar() {
   const navItems = [
     { name: 'Home', id: '#home', icon: Home },
-    { name: 'About Me', id: '#about', icon: ImageIcon },
-    { name: 'Gallery', id: '#gallery', icon: Camera },
-    { name: 'Contact', id: '#contact', icon: User },
+    { name: 'About Me', id: '#about', icon: UserRound },
+    { name: 'Gallery', id: '#gallery', icon: Images },
+    { name: 'Contact', id: '#contact', icon: Contact },
   ]
 
   return <NavBar items={navItems} />

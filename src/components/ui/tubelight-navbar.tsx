@@ -11,7 +11,6 @@ interface NavItem {
   id: string
 }
 
-
 interface NavBarProps {
   items: NavItem[]
   className?: string
@@ -30,14 +29,14 @@ export function NavBar({ items, className }: NavBarProps) {
   return (
     <header
       className={cn(
-        "fixed top-0 bottom-50 left-10 w-full z-50 p-6 md:p-5 pointer-events-none",
+        // CHANGED: 'top-0' to 'bottom-0'
+        "fixed bottom-0 left-0 w-full z-50 p-6 md:p-5 pointer-events-none flex justify-center",
         className,
       )}
     >
       <div className="flex items-center gap-4 pointer-events-auto">
         
-        {/* NAVIGATION PILL - hidden on mobile, flex on medium screens and up */}
-        <nav className="hidden md:flex items-center gap-1 bg-white/0.03 border border-white/10 backdrop-blur-2xl py-1 px-1 rounded-full shadow-xl">
+        <nav className="flex items-center gap-1 bg-white/0.03 border border-white/10 backdrop-blur-2xl py-1 px-1 rounded-full shadow-xl">
           {items.map((item) => {
             const Icon = item.icon
             const isActive = activeTab === item.name
