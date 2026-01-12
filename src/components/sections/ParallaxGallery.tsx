@@ -38,7 +38,7 @@ export default function ParallaxGallery() {
   const y4 = useTransform(scrollYProgress, [0, 1], [0, -900]);
 
   return (
-    <section id="gallary" ref={container} className="relative h-[175vh] bg-black overflow-hidden pt-32">
+    <section id="gallery" ref={container} className="relative h-[175vh] bg-black overflow-hidden pt-32">
       <div className="absolute top-16 left-1/2 -translate-x-1/2 text-center z-10 w-full px-6">
         {/* <motion.span 
           initial={{ opacity: 0, y: 10 }}

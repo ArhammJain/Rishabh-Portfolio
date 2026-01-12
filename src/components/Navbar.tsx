@@ -7,7 +7,7 @@ export default function GlobalNavbar() {
   const navItems = [
     { name: 'Home', id: '#home', icon: Home },
     { name: 'About Me', id: '#about', icon: ImageIcon },
-    { name: 'Gallary', id: '#gallary', icon: Camera },
+    { name: 'Gallery', id: '#gallery', icon: Camera },
     { name: 'Contact', id: '#contact', icon: User },
   ]
 
