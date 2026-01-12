@@ -28,7 +28,7 @@ export default function Hero() {
       />
 
       {/* Gradient overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to from-black/60 via-black/20 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
       
       {/* Content Container */}
       <div className="relative z-10 h-full flex flex-col justify-between p-6 md:p-12 lg:p-16">
