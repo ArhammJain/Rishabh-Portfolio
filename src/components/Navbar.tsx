@@ -9,7 +9,6 @@ export default function GlobalNavbar() {
     { name: 'About Me', id: '#about', icon: ImageIcon },
     { name: 'Gallary', id: '#gallary', icon: Camera },
     { name: 'Contact', id: '#contact', icon: User },
-    // { name: '', url: '/contact', icon: Mail }
   ]
 
   return <NavBar items={navItems} />

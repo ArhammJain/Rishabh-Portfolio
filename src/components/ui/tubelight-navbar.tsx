@@ -7,9 +7,10 @@ import { cn } from "@/lib/utils"
 
 interface NavItem {
   name: string
-  url: string
   icon: LucideIcon
+  id: string
 }
+
 
 interface NavBarProps {
   items: NavItem[]
@@ -46,7 +47,7 @@ export function NavBar({ items, className }: NavBarProps) {
                 key={item.name}
                 href={item.id}
                 onClick={(e) => {
-                  scrollToSection(e, item.id)
+                  scrollToSection(e, item.id!)
                   setActiveTab(item.name)
                 }}
                 className={cn(
